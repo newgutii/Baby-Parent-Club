@@ -120,19 +120,19 @@ export default function Home() {
             </div>
             
             <div className={styles.eventCard}>
-              <span className={styles.eventLabel}>Próximo Evento (LIVE)</span>
+              <span className={styles.eventLabel} style={{ color: 'white' }}>Próximo Evento (LIVE)</span>
               <h3>El Primer Mes</h3>
-              <p style={{ color: 'var(--color-border)', marginBottom: '2rem' }}>
+              <p style={{ color: 'var(--color-text-muted)', marginBottom: '2rem' }}>
                 Con el Dr. Peter Stephans. Una sesión especial para apoyarnos en esta maravillosa aventura.
               </p>
-              <Link href="/eventos" className="btn" style={{ borderColor: 'var(--color-text-light)' }}>
+              <Link href="/eventos" className="btn btn-accent">
                 Reservar Cupo
               </Link>
               
-              <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-                <span className={styles.eventLabel} style={{ backgroundColor: 'transparent', border: '1px solid currentColor' }}>Próximamente</span>
-                <h3>Trucos para que se duerman</h3>
-                <p style={{ color: 'var(--color-border)' }}>Con mamá invitada: Loretta Marquez.</p>
+              <div style={{ marginTop: '3rem', paddingTop: '2rem', borderTop: '1px solid rgba(0,0,0,0.1)' }}>
+                <span className={styles.eventLabel} style={{ backgroundColor: 'transparent', border: '1px solid var(--color-accent-terracotta)', color: 'var(--color-accent-terracotta)' }}>Próximamente</span>
+                <h3 style={{ marginTop: '1rem' }}>Trucos para que se duerman</h3>
+                <p style={{ color: 'var(--color-text-muted)' }}>Con mamá invitada: Loretta Marquez.</p>
               </div>
             </div>
           </div>

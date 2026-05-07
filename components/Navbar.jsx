@@ -25,20 +25,20 @@ export default function Navbar() {
 
   return (
     <nav className={`${styles.navbar} ${scrolled ? styles.scrolled : ''} ${menuOpen ? styles.navbarOpen : ''}`}>
+      {/* Mobile menu wrapper logic handled in CSS module via .navLinksOpen class */}
+      <div className={`${styles.navLinks} ${menuOpen ? styles.navLinksOpen : ''}`}>
+        <Link href="/nosotros" className={styles.navLink} onClick={() => setMenuOpen(false)}>Nosotros</Link>
+        <Link href="/tienda" className={styles.navLink} onClick={() => setMenuOpen(false)}>Tienda</Link>
+        <Link href="/blog" className={styles.navLink} onClick={() => setMenuOpen(false)}>Blog</Link>
+        <Link href="/eventos" className={styles.navLink} onClick={() => setMenuOpen(false)}>Eventos</Link>
+        <Link href="/foros" className={styles.navLink} onClick={() => setMenuOpen(false)}>Comunidad</Link>
+        <Link href="/contacto" className={styles.navLink} onClick={() => setMenuOpen(false)}>Contacto</Link>
+      </div>
+
       <div className={styles.navbarInner}>
-        <Link href="/" className={styles.logo}>
+        <Link href="/" className={styles.logo} onClick={() => setMenuOpen(false)}>
           Baby<span>Parents</span>Club
         </Link>
-
-        {/* Mobile menu wrapper logic handled in CSS module via .navLinksOpen class */}
-        <div className={`${styles.navLinks} ${menuOpen ? styles.navLinksOpen : ''}`}>
-          <Link href="/nosotros" className={styles.navLink}>Nosotros</Link>
-          <Link href="/tienda" className={styles.navLink}>Tienda</Link>
-          <Link href="/blog" className={styles.navLink}>Blog</Link>
-          <Link href="/eventos" className={styles.navLink}>Eventos</Link>
-          <Link href="/foros" className={styles.navLink}>Comunidad</Link>
-          <Link href="/contacto" className={styles.navLink}>Contacto</Link>
-        </div>
 
         <div className={styles.rightActions}>
           <svg className={styles.searchIcon} width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
