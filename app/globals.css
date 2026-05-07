@@ -1,29 +1,29 @@
 :root {
-  /* Core Aesthetic: Soft Oat / Off-White */
-  --color-bg-primary: #F9F9F6;
-  --color-bg-secondary: #F0EFEA;
+  /* Core Aesthetic: Nua White / Light Mint */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #f3f4f6;
   
-  /* Typography: Deep Charcoal instead of harsh black */
-  --color-text-main: #1A1A1A;
-  --color-text-muted: #5C5C5C;
-  --color-text-light: #FFFFFF;
+  /* Typography: Dark Teal / Black */
+  --color-text-main: #000000;
+  --color-text-muted: #176b66;
+  --color-text-light: #ffffff;
 
-  /* Accents: Soft Terracotta, Sage Green, Warm Taupe */
-  --color-accent-terracotta: #D37D60;
-  --color-accent-terracotta-hover: #b8674d;
-  --color-accent-sage: #91A88C;
-  --color-accent-taupe: #B5A89E;
+  /* Accents: Nua Orange and Teal */
+  --color-accent-terracotta: #ff4e0f;
+  --color-accent-terracotta-hover: #f37c1f;
+  --color-accent-sage: #176b66;
+  --color-accent-taupe: #f3f4f6;
   
   /* Borders & Structure */
-  --color-border: #E8E3D8;
+  --color-border: #e5e7eb;
   
   /* Layout variables */
   --max-width-container: 1280px;
   --header-height: 80px;
   
   /* Fonts */
-  --font-heading: var(--font-geist-sans), sans-serif;
-  --font-body: var(--font-geist-sans), sans-serif;
+  --font-heading: var(--font-fredoka), sans-serif;
+  --font-body: var(--font-quicksand), sans-serif;
 }
 
 * {
@@ -86,7 +86,7 @@ img {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   border: 1px solid var(--color-text-main);
-  border-radius: 0;
+  border-radius: 24px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
@@ -124,7 +124,7 @@ input, textarea {
   border: 1px solid var(--color-border);
   font-family: var(--font-body);
   color: var(--color-text-main);
-  border-radius: 0;
+  border-radius: 12px;
   transition: border-color 0.3s ease;
 }
 

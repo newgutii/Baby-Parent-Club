@@ -1,11 +1,16 @@
-import { Geist } from "next/font/google";
+import { Fredoka, Quicksand } from "next/font/google";
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CartSlider from "../components/CartSlider";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const fredoka = Fredoka({
+  variable: "--font-fredoka",
+  subsets: ["latin"],
+});
+
+const quicksand = Quicksand({
+  variable: "--font-quicksand",
   subsets: ["latin"],
 });
 
@@ -17,7 +22,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="es-PE" className={`${geistSans.variable}`}>
+    <html lang="es-PE" className={`${fredoka.variable} ${quicksand.variable}`}>
       <body>
         <Navbar />
         <main>{children}</main>
